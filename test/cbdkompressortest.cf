@@ -1,0 +1,11 @@
+
+
+
+# kompressortest config
+
+[Compression_settings]
+
+Compression_level = 1
+Compression_type=  "gzip"
+
+
