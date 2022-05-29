@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: LGPL-2.1
+// Copyright (C) 2021-2022 stu mark
+
 // Package cbdkompressor comment
 package cbdkompressor
 
