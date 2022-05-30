@@ -4,7 +4,7 @@
 # compressblockdevice config
 
 [log]
-log_file  = "./compressblockdevice.log"
+log_file  = "/var/log/compressblockdevice/compressblockdevice.log"
 log_level = 0
 
 [catalog]
