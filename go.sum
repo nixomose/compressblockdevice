@@ -5,6 +5,14 @@ github.com/inconshreveable/mousetrap v1.0.0 h1:Z8tu5sraLXCXIcARxBp/8cbvlwVa7Z1NH
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
 github.com/ncw/directio v1.0.5 h1:JSUBhdjEvVaJvOoyPAbcW0fnd0tvRXD76wEfZ1KcQz4=
 github.com/ncw/directio v1.0.5/go.mod h1:rX/pKEYkOXBGOggmcyJeJGloCkleSvphPx2eV3t6ROk=
+github.com/nixomose/blockdevicelib v0.0.0-20220531232442-adf0ae7d7fb8 h1:kYbJiJj9dIuQ5aZmLmU15caFhz2cPdJ1y7HKXRohpZQ=
+github.com/nixomose/blockdevicelib v0.0.0-20220531232442-adf0ae7d7fb8/go.mod h1:tRz6XIVQbipA03EaKETS7WXXromRkeLkKWdD4PDybUE=
+github.com/nixomose/nixomosegotools v0.0.0-20220529231952-c38fcdca5407 h1:YEPZvbm2ktNxhIM8VdpBoJmwOR/24UQFr90uktlxHNg=
+github.com/nixomose/nixomosegotools v0.0.0-20220529231952-c38fcdca5407/go.mod h1:ouXZ5rL/dDEfRYeUHM64ORv/pn7gOveaJNnFBbhjRmE=
+github.com/nixomose/stree_v v0.0.0-20220601010258-cf6c88e1694e h1:jZGxAETlZQ5/JhgIOL3xSWTVQS+oDpvU3eAM9WfWMtg=
+github.com/nixomose/stree_v v0.0.0-20220601010258-cf6c88e1694e/go.mod h1:RnIzoTz6RCQfYnpdfKvTdBNgNH8TokVscQkuW5gSepk=
+github.com/nixomose/zosbd2goclient v0.0.0-20220601010258-d4028771adc1 h1:jo+tcLl3cBEgS5tpjSAtHRD6pgdeajiWw5eVZ507Z+Y=
+github.com/nixomose/zosbd2goclient v0.0.0-20220601010258-d4028771adc1/go.mod h1:hQDzyr6PTC0I9FNOpizKmFmUlCskrMWmT1PMhYEwWcI=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/spf13/cobra v1.4.0 h1:y+wJpx64xcgO1V+RcnwW0LEHxTKRi2ZDPSBjWnrg88Q=
 github.com/spf13/cobra v1.4.0/go.mod h1:Wo4iy3BUC+X2Fybo0PDqwJIv3dNRiZLHQymsfxlB84g=
