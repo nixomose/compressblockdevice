@@ -4,6 +4,8 @@ module github.com/nixomose/compressblockdevice
 
 // replace github.com/nixomose/stree_v => ../stree_v
 
+// replace github.com/nixomose/slookup_i => ../slookup_i
+
 // replace github.com/nixomose/zosbd2goclient => ../zosbd2goclient
 
 // replace github.com/nixomose/nixomosegotools => ../nixomosegotools
@@ -13,9 +15,9 @@ go 1.18
 require (
 	github.com/BurntSushi/toml v1.1.0
 	github.com/nixomose/blockdevicelib v0.0.0-20220531232442-adf0ae7d7fb8
-	github.com/nixomose/nixomosegotools v0.0.0-20220529231952-c38fcdca5407
+	github.com/nixomose/nixomosegotools v0.0.0-20220601021307-4fef638de118
 	github.com/nixomose/stree_v v0.0.0-20220601010258-cf6c88e1694e
-	github.com/nixomose/zosbd2goclient v0.0.0-20220601010258-d4028771adc1
+	github.com/nixomose/zosbd2goclient v0.0.0-20220601013206-758ca3d1fa3d
 	github.com/spf13/cobra v1.4.0
 )
 
