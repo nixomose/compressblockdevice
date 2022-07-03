@@ -5,6 +5,8 @@ echo "writing zeroes..."
 dd if=/dev/zero of=testfile bs=1M count=500 status=progress conv=notrunc; sync
 ls -latrhs testfile /home/nixo/testzosdevicecompress
 echo
+echo "sleeping..."
+sleep 10
 echo "writing urandom..."
 dd if=/dev/urandom of=testfile bs=1M count=500 status=progress conv=notrunc; sync
 ls -latrhs testfile /home/nixo/testzosdevicecompress
