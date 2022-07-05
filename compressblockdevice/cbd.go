@@ -5,6 +5,7 @@ package main
 
 import (
 	"container/list"
+	"os"
 
 	blockdevicelib "github.com/nixomose/blockdevicelib/blockdevicelib"
 	"github.com/nixomose/compressblockdevice/compressblockdevice/cbdkompressor"
@@ -40,6 +41,7 @@ func main() {
 	var l *blockdevicelib.Lbd_lib
 	ret, l = blockdevicelib.New_blockdevicelib(TXT_APPLICATION_NAME)
 	if ret != nil {
+		os.Exit(1)
 		return
 	}
 	ret, root_cmd = l.Startup(TXT_DEFAULT_CONFIG_FILE, TXT_DEFAULT_LOG_FILE,
@@ -51,11 +53,16 @@ func main() {
 		l.Get_config_file())
 	ret = comp.Init()
 	if ret != nil {
+		os.Exit(1)
 		return
 	}
 
 	var pipeline list.List
 	pipeline.PushBack(comp)
 
-	l.Run(root_cmd, &pipeline)
+	ret = l.Run(root_cmd, &pipeline)
+	if ret != nil {
+		os.Exit(1)
+		return
+	}
 }
