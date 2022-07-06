@@ -47,6 +47,7 @@ func main() {
 	ret, root_cmd = l.Startup(TXT_DEFAULT_CONFIG_FILE, TXT_DEFAULT_LOG_FILE,
 		TXT_DEFAULT_CATALOG_FILE) // start configuring and make log and stuff.
 	if ret != nil {
+		os.Exit(1)
 		return
 	}
 	var comp *cbdkompressor.Compression_pipeline_element = cbdkompressor.New_compression_pipeline(l.Get_log(),
