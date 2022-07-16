@@ -1,0 +1,16 @@
+[Unit]
+Description=start and shutdown cbd 50gig disk cleanly
+Wants=network-online.target
+After=network.target network-online.target
+Before=reboot.target shutdown.target halt.target
+
+[Service]
+ExecStart=/usr/local/bin/cbd50gigdiskup.sh
+ExecStop=/usr/local/bin/cbd50gigdiskdown.sh
+RemainAfterExit=yes
+# this keeps systemd from sending sighup and sigkill to cbd, we handle
+# cleanly shutting down as a function of execstop, signals just mess things up
+KillMode=none
+
+[Install]
+WantedBy=multi-user.target

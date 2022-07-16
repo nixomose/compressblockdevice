@@ -1,0 +1,13 @@
+
+
+
+run the cbd50gigdiskup script to install it.
+
+
+you need go and jq and git and a few other things installed.
+
+if all goes well it will install a systemd service to bring up
+and clealy take down a 50 gig compressed block device in /opt/cbd
+
+it assumes you make a partition on the block device such that partprobe
+creates a /dev/cbd50gigdisk1 device.
