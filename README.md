@@ -128,8 +128,25 @@ dump the header of the stree backing the block device.
 
 
 
+```storage-status```
 
-
-
-help                Help about any command
-  storage-status      display definition of backing storage
+display definition of backing storage
+  
+``` ./cbd storage-status -t /home/nixo/testzosz5 
+{
+ "backing_storage": "/home/nixo/testzosz5",
+ "dirty": "1",
+ "inital_block_size_in_bytes": "65,584",
+ "inital_nodes_per_block": "4",
+ "inital_store_size_in_bytes": "424,161,640,448",
+ "node_size_in_bytes": "327,920",
+ "number_of_blocks_available_in_backing_store": "6,467,456",
+ "number_of_physical_bytes_used_for_a_block": "65,584",
+ "physical_store_block_alignment": "65,584",
+ "total_bytes_wasted_due_to_alignment_padding": "0",
+ "total_waste_percent": "0",
+ "wasted_bytes_per_block": "0"
+}
+```  
+  
+  
