@@ -20,13 +20,14 @@ Instructions to build the kernel module are all there.
 # Running
 
 the build produces a cbd binary which you can put in your path so you can just run cbd from anywhere...
-At the moment you have to be root to run cbd mostly because of interacting with the kernel module block block and the control device.
+At the moment you have to be root to run cbd mostly because of interacting with the kernel module block device and the control device.
 On my list of things to do is make it not require root, that should be possible as long as you can convey the user you want to use it as to the kernel module the first time. chicken and egg problem for another day.
 
 ```
 ./cbd  --help
-local block device allows you to define a catalog of block devices defining their size and backing store and lets you easily start up and shut down these block devices. requires zosbd2 - https
-://github.com/nixomose/zosbd2
+cbde allows you to define a catalog of block devices defining their size and backing store and lets you 
+easily start up and shut down these block devices. 
+requires zosbd2 - https://github.com/nixomose/zosbd2
 
 Usage:
   cbd [command]
@@ -100,8 +101,35 @@ example output:
 ```  
   
   
-  
-  
-  diag                diagnostic tools
-  help                Help about any command
+```diag```
+
+diagnostic tools
+
+dump the header of the stree backing the block device.
+
+```
+./cbd diag dump header -d z5
+    0: 5a454e53 54354b41 00000062 c2010000 00000004 00010030 0062af80 00000000  | ZENST5KA░░░b░░░░░░░░░░░0░b░░░░░░
+   32: 00000001 00010030 00000001                                               | ░░░░░░░0░░░░
+
+{
+ "0001_key": "    0: 5a454e53 54354b41  | ZENST5KA\n",
+ "0002_store_size_in_bytes": "424,161,640,448 0x00000062c2010000",
+ "0003_nodes_per_block": "4 0x00000004",
+ "0004_block_size": "65,584 0x00010030",
+ "0005_block_count": "6,467,456 0x0062af80",
+ "0006_root_node": "0 0x00000000",
+ "0007_free_position": "1 0x00000001",
+ "0008_alignment": "65,584 0x00010030",
+ "0009_dirty": "1 0x00000001"
+}
+```
+
+
+
+
+
+
+
+help                Help about any command
   storage-status      display definition of backing storage
