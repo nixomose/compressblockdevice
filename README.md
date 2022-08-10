@@ -132,7 +132,8 @@ dump the header of the stree backing the block device.
 
 display definition of backing storage
   
-``` ./cbd storage-status -t /home/nixo/testzosz5 
+``` 
+./cbd storage-status -t /home/nixo/testzosz5 
 {
  "backing_storage": "/home/nixo/testzosz5",
  "dirty": "1",
