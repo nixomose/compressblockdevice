@@ -51,7 +51,7 @@ Flags:
 
 # catalog
 
-the catalog is just a list of definitions about a block device tied to a name so that you can define the block device characteristics once, and from then on refer to the block device definition by name.
+the catalog is just a list of definitions about a block device tied to a name so that you can define the block device characteristics once, and from then on refer to the block device definition by name. most regular usage of compressbd is through the catalog commands.
 
 ```
   add         add a catalog entry with this block device definition
@@ -62,3 +62,46 @@ the catalog is just a list of definitions about a block device tied to a name so
   stop        cleanly shutdown a currently running block device specified by the device name
 ```
 
+# lower level access
+
+
+  ```destroy-device``` 
+this command tells the kernel module to cleanly end a block device. it will attempt to flush any in-flight requests but if they take too long to process, the block device will be pulled out from under you. so you should only call this once you've synced and unmounted any filesystems mounted to the block device.
+
+  
+  ```destroy-all-devices```  
+
+same as above, but you don't specify a device name, it just goes through and destroys all the block devices, attempting to flush data first.
+  
+  
+ 
+  
+  ```device-status```
+  
+display status of all existing block devices.
+ 
+example output:
+  
+```
+./cbd device-status 
+2022/08/09 20:51:11 {"msg":"getting status for all block devices."}
+2022/08/09 20:51:11 {"msg":"getting status for handle_id 2"}
+{
+ "z5": {
+  "size_in_bytes": 10737418240,
+  "number_of_blocks": 2621440,
+  "kernel_block_size_in_bytes": 4096,
+  "max_segments_per_request": 256,
+  "timeout_in_milliseconds": 1200000,
+  "handle_id": 2,
+  "device_name": "z5"
+ }
+}
+```  
+  
+  
+  
+  
+  diag                diagnostic tools
+  help                Help about any command
+  storage-status      display definition of backing storage
