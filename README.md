@@ -48,3 +48,17 @@ Flags:
   -v, --log-level uint32     log level: 0=debug 200=info 500=error (default 200)
 
 ```
+
+# catalog
+
+the catalog is just a list of definitions about a block device tied to a name so that you can define the block device characteristics once, and from then on refer to the block device definition by name.
+
+```
+  add         add a catalog entry with this block device definition
+  delete      delete the specified catalog entry and its backing store
+  list        list one or all of the devices defined in the catalog
+  set         set a configuration or catalog entry option
+  start       create a block device with the definition specified by the device name in the catalog
+  stop        cleanly shutdown a currently running block device specified by the device name
+```
+
