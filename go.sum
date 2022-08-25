@@ -9,8 +9,8 @@ github.com/nixomose/blockdevicelib v0.0.0-20220531232442-adf0ae7d7fb8 h1:kYbJiJj
 github.com/nixomose/blockdevicelib v0.0.0-20220531232442-adf0ae7d7fb8/go.mod h1:tRz6XIVQbipA03EaKETS7WXXromRkeLkKWdD4PDybUE=
 github.com/nixomose/nixomosegotools v0.0.0-20220601021307-4fef638de118 h1:P3rRcXQccmKLIL6M/Bf6CT++mlK5tLUNMQJTiABgI8o=
 github.com/nixomose/nixomosegotools v0.0.0-20220601021307-4fef638de118/go.mod h1:dBOlDmzSf3z2BaH8feoB7Prtq6du/1z8QXib2bNFLRE=
-github.com/nixomose/stree_v v0.0.0-20220601010258-cf6c88e1694e h1:jZGxAETlZQ5/JhgIOL3xSWTVQS+oDpvU3eAM9WfWMtg=
-github.com/nixomose/stree_v v0.0.0-20220601010258-cf6c88e1694e/go.mod h1:RnIzoTz6RCQfYnpdfKvTdBNgNH8TokVscQkuW5gSepk=
+github.com/nixomose/stree_v v0.0.0-20220609015355-6910180c06ab h1:NnJcKmtF4hN2JMNM/x+SwImLPqONltuKzjhCM62N8Fo=
+github.com/nixomose/stree_v v0.0.0-20220609015355-6910180c06ab/go.mod h1:CVViBGdFmgqITHNgxmYA/bDlD0rHtMqVoThV1BJ4OC0=
 github.com/nixomose/zosbd2goclient v0.0.0-20220601013206-758ca3d1fa3d h1:fD2Mqxc4MRwz243agkBJY57v0InejwtWdYqA3qz/A50=
 github.com/nixomose/zosbd2goclient v0.0.0-20220601013206-758ca3d1fa3d/go.mod h1:4cTyhXlcQU1qd2jvEJ/mQQLt8iLG5H0jAYt+Yz5ryj0=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
