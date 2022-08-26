@@ -173,7 +173,7 @@ func test_a_size(log *tools.Nixomosetools_logger, l *blockdevicelib.Lbd_lib, com
 		testdata[i] = byte((i * i) - i + (i % 5))
 	}
 
-	ret = (*zout).Write_block(0, data_block_size, testdata)
+	ret = (*zout).Write_block(0, data_block_size, &testdata)
 	if ret != nil {
 		panic("write block size failed: " + ret.Get_errmsg())
 	}
@@ -181,7 +181,7 @@ func test_a_size(log *tools.Nixomosetools_logger, l *blockdevicelib.Lbd_lib, com
 	// now read it back and make sure it matches
 	var returndata []byte = make([]byte, data_block_size)
 
-	ret = (*zout).Read_block(0, data_block_size, returndata)
+	ret = (*zout).Read_block(0, data_block_size, &returndata)
 	if ret != nil {
 		panic("read block size failed: " + ret.Get_errmsg())
 	}
